@@ -4,16 +4,22 @@ import mysql.connector as sql
 
 
 def register():
-    # Connection parameters
+     # Connection parameters
     db_host = 'sportan-sportans.g.aivencloud.com'
     db_port = 10931
     db_user = 'avnadmin'
-    db_password = 'AVNS_rQv-tHW54YDLIuObu2M'
+    db_password = 'AVNS_rQv-tHW54YDLIuObu2M' #Replace with your actual password
     db_name = 'defaultdb'
 
     
         # Establish a connection
-    connection = sql.connect(host=db_host,port=db_port,user=db_user,passwordd=db_password,db=db_name,auth_plugin='mysql_native_password')
+    connection = sql.connect(
+            host=db_host,
+            port=db_port,
+            user=db_user,
+            passwd=db_password,
+            db=db_name
+        )
     cursor = connection.cursor()
     st.subheader("Register")
     name = st.text_input("Name")
