@@ -13,7 +13,7 @@ def register():
 
     
         # Establish a connection
-    connection = sql.connect(host=db_host,port=db_port,user=db_user,passwordd=db_password,db=db_name)
+    connection = sql.connect(host=db_host,port=db_port,user=db_user,passwordd=db_password,db=db_name,auth_plugin='mysql_native_password')
     cursor = connection.cursor()
     st.subheader("Register")
     name = st.text_input("Name")
