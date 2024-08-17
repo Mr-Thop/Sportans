@@ -8,7 +8,7 @@ def register():
     db_host = 'sportan-sportans.g.aivencloud.com'
     db_port = 10931
     db_user = 'avnadmin'
-    db_password = 'AVNS_rQv-tHW54YDLIuObu2M' #Replace with your actual password
+    db_password = 'AVNS_rQv-tHW54YDLIuObu2M'
     db_name = 'defaultdb'
 
     
