@@ -1,5 +1,4 @@
 streamlit==1.37.0
 passlib==1.7.4
-mysql-connector
 mysql-connector-python
 google-generativeai==0.7.0
