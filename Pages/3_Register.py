@@ -13,11 +13,10 @@ def register():
 
     
         # Establish a connection
-    connection = sql.connect(
-            host=db_host,
+    connection = sql.connect(host=db_host,
             port=db_port,
             user=db_user,
-            passwd=db_password,
+            passwordd=db_password,
             db=db_name
         )
     cursor = connection.cursor()
