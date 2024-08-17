@@ -3,7 +3,6 @@ from passlib.hash import sha256_crypt
 import mysql.connector as sql
 
 
-# Function for user registration
 def register():
     # Connection parameters
     db_host = 'sportan-sportans.g.aivencloud.com'
