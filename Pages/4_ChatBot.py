@@ -11,7 +11,7 @@ with st.sidebar :
 genai.configure(api_key=os.getenv("api_key"))
 
 # Initialize the model
-model = genai.GenerativeModel("gemini-2.5-flash")
+model = genai.GenerativeModel("gemini-2.5-flash-lite")
 
 st.header("Welcome to Sporta Bot: Your Personalized Sports Coach and Caretaker!")
 
